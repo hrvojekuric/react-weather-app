@@ -1,0 +1,90 @@
+* ,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+.container {
+  background-image: url("./assets/pexels-brett-sayles-912364.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur(4px);
+    max-width: 400px;
+    min-width: 100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+  }
+  
+  .searchBox {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .weatherBox {
+    margin-top: 2rem;
+  }
+  
+  .weatherInput {
+    min-width: 50%;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .weatherInput:focus {
+    outline: none;
+  }
+  
+  .weatherBtn {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    border: none;
+    border-radius: 0.5rem;
+    color: black;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .weatherBtn {
+    min-width: 10%;
+    outline: none;
+  }
+
+  @media screen and (max-width: 236px) {
+    .searchBox {
+      flex-direction: column;
+    }
+    .weatherBox {
+      font-size: 0.6rem;
+    }
+  }
+
